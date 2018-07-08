@@ -15,7 +15,7 @@ public class PropertyInjectedDITest {
 	public void setup() throws Exception {
 
 		this.propertyInjectedController = new PropertyInjectedController();
-		this.propertyInjectedController.greetingService = new GreetingServiceImp();
+		this.propertyInjectedController.greetingServiceImp = new GreetingServiceImp();
 
 	}
 
