@@ -1,12 +1,21 @@
 package guru.springframework.controllers;
 
-import guru.springframework.services.GreetingService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
+import guru.springframework.services.GreetingService;
+/**
+ * 
+ * @author praveen-vp
+ * 08-Jul-2018
+ *
+ */
+@Controller
 public class SetterInjectedController {
 	
 	private GreetingService greetingService;
 
-	String sayHello() {
+	public String sayHello() {
 		return greetingService.sayGreeting();
 	}
 	
@@ -14,6 +23,7 @@ public class SetterInjectedController {
 		return greetingService;
 	}
 
+	@Autowired
 	public void setGreetingService(GreetingService greetingService) {
 		this.greetingService = greetingService;
 	}
