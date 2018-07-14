@@ -1,0 +1,43 @@
+
+author of SOLID principles : Robert "Uncle Bob" Martin.
+
+ S - Single Responsibility  --- Single responsibility for a class
+ O - Open close principle 
+ L - Liskov substitution principle, by Barbara Liskov
+ I - interface segregation principles 
+ D - Dependency Inversion principles 
+
+
+ Dependency Injection vs Dependency Inversion
+ --------------------------------------------
+    >> Dependency injection refers to the injection of dependencies to a class, 
+    >> Dependency Inversion address abstraction.
+    >> Dependency Injection Types -- There are 3
+        * property injected 
+        * setter injected
+        * Constructor injected -- most prefered -- Dependency injected when the class is instantiated.
+        
+        >> Side note : Dependency Injection using private property is a << VERY BAD >> approach,
+           even though the spring support this using reflection at runtime.
+    
+    Dependency Injection using interfaces is prefered than concrete classes, as this will help to run time environment
+    to determine the implementation of object.
+
+    Spring IoC - Inversion of Control -- the run time environment or framwork which insert Dependency at run time.
+
+    Dependency Injection annotation : @Autowired
+
+    @Primary - for giving preference to others when there are multiple beans of same type.
+    @Qualifier - specifying which bean need to be injected. 
+      
+ Bean Life Cycle call back interfaces
+ -----------------------------------
+    > DispossibleBean
+    > InitializingBean
+    
+    Annotations
+     
+     @PostConstruct
+     @PreDestroy
+
+
