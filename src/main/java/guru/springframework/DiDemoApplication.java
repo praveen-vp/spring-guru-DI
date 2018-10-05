@@ -8,6 +8,7 @@ import guru.springframework.controllers.MyController;
 import guru.springframework.controllers.PropertyInjectedController;
 import guru.springframework.controllers.SetterInjectedController;
 import guru.springframework.examplebeans.FakeDataSource;
+import guru.springframework.examplebeans.FakeJmxBroker;
 
 /**
  * 
@@ -31,5 +32,8 @@ public class DiDemoApplication {
 		FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
 		
 		System.out.println(fakeDataSource.getDbUrl());
+		
+		FakeJmxBroker fakeJmxBroker = (FakeJmxBroker) ctx.getBean(FakeJmxBroker.class);
+		System.out.println(fakeJmxBroker.getPasswd());
 	}
 }
