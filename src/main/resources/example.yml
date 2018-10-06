@@ -1,0 +1,33 @@
+# this is a comment
+name: Praveen
+names:
+  - Praveen
+  - Vattaparambil
+  - Prabhakaran
+  
+pound_sign: '#'
+
+book: 
+  author: "Brian Weiss" 
+  publisher: "some publisher"
+  name: "Many Lives, Many Masters"
+  
+truth: yes
+another_truth: True
+more_true: true
+
+false: no
+
+string_val: "this is a string"
+colon_string: "this is a string : containing colon"
+
+include_new_lines: |
+  pipe added infront of the strings
+  dklsklsdklklslk
+  ldsll sfd
+  
+ignore_new_lines: >
+  this is just
+  long string
+  for example purpose
+  
