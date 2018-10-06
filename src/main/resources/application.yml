@@ -1,0 +1,5 @@
+# adding the jmx configuration to yml config files.
+jmx: 
+  user: jmx-admin
+  passwd: jmx-passwd
+  url: localhostjmx
