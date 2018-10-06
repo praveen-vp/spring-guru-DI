@@ -12,10 +12,10 @@ import guru.springframework.examplebeans.FakeJmxBroker;
 
 @Configuration
 //@PropertySource("classpath:datasource.properties")
-@PropertySources({
-	@PropertySource("classpath:datasource.properties"),
-	@PropertySource("classpath:jmx.properties")
-})
+//@PropertySources({
+//	@PropertySource("classpath:datasource.properties"),
+//	@PropertySource("classpath:jmx.properties")
+//})
 public class PropertyConfig {
 	
 	@Value("${guru.user}")
@@ -61,12 +61,12 @@ public class PropertyConfig {
 	}
 	
 	
-	@Bean
-	public static PropertySourcesPlaceholderConfigurer properties () {
-		
-		PropertySourcesPlaceholderConfigurer placeholderConfigurer = new PropertySourcesPlaceholderConfigurer();
-		return placeholderConfigurer;
-		
-	}
+//	@Bean
+//	public static PropertySourcesPlaceholderConfigurer properties () {
+//		
+//		PropertySourcesPlaceholderConfigurer placeholderConfigurer = new PropertySourcesPlaceholderConfigurer();
+//		return placeholderConfigurer;
+//		
+//	}
 
 }

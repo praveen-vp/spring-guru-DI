@@ -22,7 +22,7 @@ public class FakeJmxBroker {
 		this.passwd = passwd;
 	}
 
-	public String getDbUrl() {
+	public String getUrl() {
 		return dbUrl;
 	}
 

@@ -35,5 +35,6 @@ public class DiDemoApplication {
 		
 		FakeJmxBroker fakeJmxBroker = (FakeJmxBroker) ctx.getBean(FakeJmxBroker.class);
 		System.out.println(fakeJmxBroker.getPasswd());
+		System.out.println(fakeJmxBroker.getUrl());
 	}
 }
